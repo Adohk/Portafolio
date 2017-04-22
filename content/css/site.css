@@ -1,0 +1,121 @@
+.user-img {
+    padding-left: 25px;
+    padding-top: 10px;
+}
+
+.user-img img {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+}
+
+.user-info {
+    background: url("../images/blue.jpg");
+    height: 245px;
+    padding: 10px 10px 10px 10px;
+    background-color: #254B6F;
+    background-repeat: no-repeat;
+    background-size: calc(200% + 200%) !important;
+    z-index: 0;
+}
+
+.info-container {
+    line-height: 25px;
+    font-size: 15px;
+    padding-top: 50px;
+    padding-left: 10px;
+    font-weight: 600 !important;
+}
+
+.menu-header {
+    background: #eee !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    padding: 8px 16px !important;
+    line-height: 20px !important;
+    color: gray;
+}
+
+brand-logo {
+    font-weight: 600 !important;
+}
+
+header,
+footer {
+    padding-left: 300px;
+}
+
+main {
+    padding-left: 325px;
+    padding-right: 25px;
+    min-height: 100%;
+    margin: 0 auto -155px;
+}
+
+.footer,
+.push {
+    height: 145px;
+    /* .push must be the same height as .footer */
+}
+
+header,
+nav,
+footer {
+    background-color: #254B6F !important;
+}
+
+.mz-logo {
+    max-height: 65px;
+    padding-left: 5px;
+}
+
+@media only screen and (max-width: 992px) {
+    main {
+        padding-right: 0;
+    }
+    header,
+    main,
+    footer {
+        padding-left: 0;
+    }
+}
+
+.waves-effect.waves-blue .waves-ripple {
+    background-color: rgba(37, 75, 111, 0.65);
+}
+
+html,
+body {
+    height: 100%;
+}
+
+main {
+    overflow: auto;
+    padding-bottom: 180px;
+}
+
+footer {
+    bottom: 0px;
+    width: 100%;
+    position: relative;
+    /*margin-top: -180px;*/
+    /* negative value of footer height */
+    /*height: 180px;*/
+    clear: both;
+}
+
+body {
+    background-color: gainsboro;
+}
+
+.side-nav li.active {
+    background-color: rgba(37, 75, 111, 0.65);
+}
+
+.side-nav li.active a {
+    color: #eee;
+    content: '\E315';
+}
