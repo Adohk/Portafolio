@@ -1,0 +1,11 @@
+{
+  "name": "portafolio",
+  "authors": [
+    "Adohk <dev@null.com>"
+  ],
+  "dependencies": {
+    "jquery":"latest",
+    "bootstrap": "latest",
+    "materialize":"latest"
+  }
+}
