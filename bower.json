@@ -5,7 +5,6 @@
   ],
   "dependencies": {
     "jquery":"latest",
-    "bootstrap": "latest",
     "materialize":"latest"
   }
 }

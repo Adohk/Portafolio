@@ -29,4 +29,8 @@ $(document).ready(function () {
         thumbnail: true,
         selector: 'a'
     });
+    $('#aurai').lightGallery({
+        thumbnail: true,
+        selector: 'a'
+    });
 });
