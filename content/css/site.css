@@ -4,10 +4,7 @@
 }
 
 .user-img img {
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    border-radius: 50%;
+
     width: 90px;
     height: 90px;
 }
@@ -119,3 +116,25 @@ body {
     color: #eee;
     content: '\E315';
 }
+
+.carousel.carousel-slider.carousel-item img{
+    max-width: 100%;
+}
+.carousel.carousel-slider {
+top: 0;
+left: 0;
+height: calc(400px);
+max-width: 100%;
+}
+
+/*.carousel .carousel-item {
+    max-height: 100%;
+}*/
+
+/* Light Gallery ================================ */
+.lg-outer .lg-thumb-item,
+.lg-outer .lg-toogle-thumb {
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  -ms-border-radius: 0 !important;
+  border-radius: 0 !important; }
