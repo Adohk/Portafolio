@@ -1,6 +1,6 @@
 $('.button-collapse').sideNav();
 
-$(window).on("load", function() {
+$(window).on("load", function () {
     setTimeout(function () {
         $('.page-loader-wrapper').fadeOut();
     }, 10);
@@ -27,6 +27,10 @@ $(document).ready(function () {
         selector: 'a'
     });
     $('#aurai').lightGallery({
+        thumbnail: true,
+        selector: 'a'
+    });
+    $('#dashboardi').lightGallery({
         thumbnail: true,
         selector: 'a'
     });
