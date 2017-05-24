@@ -1,5 +1,4 @@
-$('.button-collapse').sideNav({
-});
+$('.button-collapse').sideNav({});
 
 $(window).on("load", function () {
     setTimeout(function () {
@@ -37,33 +36,35 @@ $(document).ready(function () {
     });
 });
 
-function selectSection(_section){
-	var sections={
-		inicio : document.getElementById("inicio"),
-		experiencia : document.getElementById("experiencia"),
-		proyectos : document.getElementById("proyectos"),
-        contacto : document.getElementById("contacto")
-	};
-    var buttons={
-        inicio : document.getElementById("inili"),
-		experiencia : document.getElementById("expli"),
-		proyectos : document.getElementById("proli"),
-        contacto : document.getElementById("conli")
+function selectSection(_section) {
+
+
+    var sections = {
+        inicio: document.getElementById("inicio"),
+        experiencia: document.getElementById("experiencia"),
+        proyectos: document.getElementById("proyectos"),
+        contacto: document.getElementById("contacto")
+    };
+    var buttons = {
+        inicio: document.getElementById("inili"),
+        experiencia: document.getElementById("expli"),
+        proyectos: document.getElementById("proli"),
+        contacto: document.getElementById("conli")
     };
 
-	for(section in sections){
-		if(section===_section){
-			sections[section].classList.add("selected");
+    for (section in sections) {
+        if (section === _section) {
+            sections[section].classList.add("selected");
             buttons[section].classList.add("active");
-		}else{
-			sections[section].classList.remove("selected");
+        } else {
+            sections[section].classList.remove("selected");
             buttons[section].classList.remove("active");
-		}
-	}
-
-    if($body.width() < 992){
-        $('.button-collapse').sideNav('hide');
+        }
     }
+    var width = $(window).width();
+    if (width < 992) {
+        $('.button-collapse').sideNav('hide');
+    };
 
-	return false;
+    return false;
 }
