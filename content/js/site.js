@@ -1,5 +1,4 @@
 $('.button-collapse').sideNav({
-    closeOnClick: true
 });
 
 $(window).on("load", function () {
@@ -63,7 +62,7 @@ function selectSection(_section){
 	}
 
     if($body.width() < 992){
-
+        $('.button-collapse').sideNav('hide');
     }
 
 	return false;
