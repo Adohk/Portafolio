@@ -13,11 +13,12 @@
 
     <link rel="stylesheet" href="./content/fonts/material-icons.css">
     <link rel="stylesheet" href="./content/fonts/roboto/Roboto-Regular.woff">
-    <link rel="stylesheet" href="./content/fonts/roboto/Roboto-Regular.woff2">
+    <!--<link rel="stylesheet" href="./content/fonts/roboto/Roboto-Regular.woff2">-->
 
     <link rel="stylesheet" href="./content/css/materialize.min.css">
     <link rel="stylesheet" href="./content/css/loader.css">
     <link rel="stylesheet" href="./content/css/site.css">
+    <link rel="stylesheet" href="./content/css/lightgallery.min.css">
 </head>
 
 <body>
@@ -53,10 +54,10 @@
             </li>
             <li class="menu-header">Menu</li>
 
-            <li class="active"><a class="waves-effect waves-blue" href="#!">Inicio</a></li>
-            <li><a class="waves-effect waves-blue" href="./Experiencia.html">Experiencia</a></li>
-            <li><a class="waves-effect waves-blue" href="./Proyectos.html">Proyectos</a></li>
-            <li><a class="waves-effect waves-blue" href="./Contacto.html">Contacto</a></li>
+            <li id="inili" class="active"><a class="waves-effect waves-blue" onClick="selectSection('inicio')">Inicio</a></li>
+            <li id="expli"><a class="waves-effect waves-blue" onClick="selectSection('experiencia')">Experiencia</a></li>
+            <li id="proli"><a class="waves-effect waves-blue" onClick="selectSection('proyectos')">Proyectos</a></li>
+            <li id="conli"><a class="waves-effect waves-blue" onClick="selectSection('contacto')">Contacto</a></li>
         </ul>
     </aside>
     <header>
@@ -76,97 +77,278 @@
 
     </header>
     <main>
-        <section id="content" class="content ">
-            <div class="container-fluid">
-                <div class="block-header">
-                    <!--Content-->
-                    <div class="row">
-                        <div class="col s12 m16">
-                            <div class="card blue-grey darken-1">
-                                <div class="card-content white-text">
-                                    <span class="card-title">Portafolio</span>
-                                    <p>Hola, este es mi portafolio y los invito a leer los contenidos para conozcan un poco
-                                        más de mi y de mi trabajo.
-                                    </p>
+        <div class="row">
+            <div class="col s12 m16">
+                <div class="card blue-grey darken-1">
+                    <div class="card-content white-text">
+                        <span class="card-title">Portafolio</span>
+                        <p>Hola, este es mi portafolio y los invito a leer los contenidos para conozcan un poco más de mi y
+                            de mi trabajo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="inicio" class="hidden selected">
+            <div id="content" class="content ">
+                <div class="container-fluid">
+                    <div class="block-header">
+                        <!--Content-->
+                        <div class="row">
+                            <div class="col s12 m16">
+                                <div class="card blue-grey darken-1">
+                                    <div class="card-content white-text">
+                                        <span class="card-title">Acerca de mi</span>
+                                    </div>
+                                    <div class="card-tabs">
+                                        <ul class="tabs tabs-fixed-width tabs-transparent blue-grey darken-2 ">
+                                            <li class="tab"><a class="active" href="#tab1">Quien Soy</a></li>
+                                            <li class="tab"><a href="#tab2">Conocimientos</a></li>
+                                            <li class="tab"><a href="#tab3">Pretenciones</a></li>
+                                            <li class="tab"><a href="#tab4">Extras</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="card-content blue-grey darken-1 white-text">
+                                        <div id="tab1">
+                                            <p>
+                                                Mi nombre es Iván Guzmán, tengo 25 años, vivo en Rancagua y soy Egresado de Ingeniería en Informática en Inacap. <br>                                                Actualmente terminé la práctica y estoy en proceso de titulación.
+                                            </p>
+                                            <br>
+                                            <p>
+                                                Estudié esta carrera porque me interesa la informática y la programación.<br>                                                Dentro de mis conocimientos destaco el manejo en: <br> C#, .Net, Asp.Net
+                                                ( y Core v1.1) <br><br>Ya que con este lenguaje puedo expresarme fluidamente
+                                                en código para crear aplicaciones, ya sean C.R.U.D. usando MSSql + Entity
+                                                Framework ó aplicaciones simples de uso practico.
+                                            </p>
+                                        </div>
+                                        <div id="tab2">
+                                            <p>
+                                                Lenguajes: <br> C#, C, C++, VB, javascript, JQuery.<br>
+                                            </p>
+                                            <br>
+                                            <p>
+                                                SQL:<br> MSSQL, MySQL, Oracle, PostgreSQL.<br>
+                                            </p>
+                                            <br>
+                                            <p>
+                                                Plataformas:<br> Azure, IIS, GitHub, Team Foundation Server.<br>
+                                            </p>
+                                            <br>
+                                            <p>
+                                                Sistemas:<br> Windows, Windows Server, GNU/Linux (RedHat, Fedora, Ubuntu).<br>
+                                            </p>
+                                        </div>
+                                        <div id="tab3">
+                                            <p>
+                                                Quiero encontrar un trabajo amigable en el cual pueda utilizar mis habilidades. Ya sean de programación ó de informática
+                                                en general como el manejo de servidores, IT ó asesoría.
+                                            </p>
+                                            <br>
+                                            <p>
+                                                Ahora tengo mucho interés en aprender más sobre cómo aplicar otros frameworks a .Net, tales como AngularJS o React, además
+                                                de adquirir más experiencia en bases de datos PostgreSQL y RavenDB.
+                                            </p>
+                                        </div>
+                                        <div id="tab4">
+                                            <p>Toco la guitarra desde hace ya 6 años On and Off.<br> Me gusta la independencia
+                                                pero también me gusta estar en buena compañía.<br>
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <!--/Content-->
                     </div>
-                    <div class="row">
-                        <div class="col s12 m16">
-                            <div class="card blue-grey darken-1">
-                                <div class="card-content white-text">
-                                    <span class="card-title">Acerca de mi</span>
-                                </div>
-                                <div class="card-tabs">
-                                    <ul class="tabs tabs-fixed-width tabs-transparent blue-grey darken-2 ">
-                                        <li class="tab"><a class="active" href="#tab1">Quien Soy</a></li>
-                                        <li class="tab"><a href="#tab2">Conocimientos</a></li>
-                                        <li class="tab"><a href="#tab3">Pretenciones</a></li>
-                                        <li class="tab"><a href="#tab4">Extras</a></li>
-                                    </ul>
-                                </div>
-                                <div class="card-content blue-grey darken-1 white-text">
-                                    <div id="tab1">
-                                        <p>
-                                            Mi nombre es Iván Guzmán, tengo 25 años, vivo en Rancagua y soy Egresado de Ingeniería en Informática en Inacap. <br>                                            Actualmente terminé la práctica y estoy en proceso de titulación.
-                                        </p>
-                                        <br>
-                                        <p>
-                                            Estudié esta carrera porque me interesa la informática y la programación.<br>                                            Dentro de mis conocimientos destaco el manejo en: <br> C#, .Net, Asp.Net ( y
-                                            Core v1.1) <br><br>Ya que con este lenguaje puedo expresarme fluidamente en código
-                                            para crear aplicaciones, ya sean C.R.U.D. usando MSSql + Entity Framework ó aplicaciones
-                                            simples de uso practico.
-                                        </p>
-                                    </div>
-                                    <div id="tab2">
-                                        <p>
-                                            Lenguajes: <br> C#, C, C++, VB, javascript, JQuery.<br>
-                                        </p>
-                                        <br>
-                                        <p>
-                                            SQL:<br> MSSQL, MySQL, Oracle, PostgreSQL.<br>
-                                        </p>
-                                        <br>
-                                        <p>
-                                            Plataformas:<br> Azure, IIS, GitHub, Team Foundation Server.<br>
-                                        </p>
-                                        <br>
-                                        <p>
-                                            Sistemas:<br> Windows, Windows Server, GNU/Linux (RedHat, Fedora, Ubuntu).<br>
-                                        </p>
-                                    </div>
-                                    <div id="tab3">
-                                        <p>
-                                            Quiero encontrar un trabajo amigable en el cual pueda utilizar mis habilidades. Ya sean de programación ó de informática
-                                            en general como el manejo de servidores, IT ó asesoría.
-                                        </p>
-                                        <br>
-                                        <p>
-                                            Ahora tengo mucho interés en aprender más sobre cómo aplicar otros frameworks a .Net, tales como AngularJS o React, además
-                                            de adquirir más experiencia en bases de datos PostgreSQL y RavenDB.
-                                        </p>
-                                    </div>
-                                    <div id="tab4">
-                                        <p>Toco la guitarra desde hace ya 6 años On and Off.<br> Me gusta la independencia pero
-                                            también me gusta estar en buena compañía.<br>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--/Content-->
                 </div>
             </div>
         </section>
+        <section id="experiencia" class="hidden">
+            <div id="content" class="content ">
+                <div class="container-fluid">
+                    <div class="block-header">
+                        <!--Content-->
+                        <div class="clearfix"></div>
+                        <div class="row">
+                            <div class="col s12 m16">
+                                <div class="card blue-grey darken-1">
+                                    <div class="card-content white-text">
+                                        <span class="card-title">Aura Ingeniería S.A. - Practica Profesional Ingeniería en Informática</span>
+                                        <h5>Enero 2017 - Abril 2017</h5>
+                                        <p>En el tiempo que estuve en esta practica me dedique a crear un sistema interno de
+                                            inventarios, uso de ERP, dar capacitaciones sobre plataformas de correos, respaldos
+                                            de información, mantenimiento de equipos, uso del hosting de la empresa y manejo
+                                            de servidores web, smtp y de ipbx (Telefonía IP). <br><br> En esta practica también
+                                            nos capacitaron para manejar el sistema de administración de cuentas de correo
+                                            de Google, El encargado de esta fue Orion con la cual aprendimos a mantener el
+                                            sistema de correos y de las aplicaciones en la nube.
+                                        </p>
+                                    </div>
+                                    <div class="card-action">
+                                        <a target="_blank" href="http://www.aura.cl">Sitio web</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+
+                        <!--/Content-->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="proyectos" class="hidden">
+            <div id="content" class="content ">
+                <div class="container-fluid">
+                    <div class="block-header">
+                        <!--Content-->
+                        <!--Dashboard - Generic-->
+                        <div class="row">
+                            <div class="col s12 m16">
+                                <div class="card blue-grey darken-1">
+                                    <div class="card-content white-text">
+                                        <span class="card-title activator white-text">Dashboard - Generic (WIP)<i class="material-icons right">more_vert</i></span>
+                                        <p>Una plataforma administrativa multiuso, con un diseño basado en Material Design de
+                                            Google, Con una base utilizando <a href="https://gurayyarar.github.io/AdminBSBMaterialDesign/index.html">AdminBSB</a>                                            Un diseño simple, funcional y ágil, hecho en C# Asp.Net MVC 5, Bootstrap y Materialize.css.
+                                        </p>
+                                    </div>
+                                    <div class="card-action">
+                                        <!--<a href="#">Demo</a>-->
+                                        <a class="activator" style="cursor:pointer">Galeria</a>
+                                    </div>
+
+                                    <div class="card-reveal white-text blue-grey darken-1">
+                                        <span class="card-title white-text">Dashboard - Generic (WIP)<i class="material-icons right">close</i></span>
+                                        <br />
+                                        <div id="dashboardi">
+                                            <a href="./content/images/DASHBOARDG/ds1.png"><img class="img-responsive thumbnail" style="max-width: 90px; max-height:90px;"
+                                                    src="./content/images/DASHBOARDG/ds1.png"></a>
+                                            <a href="./content/images/DASHBOARDG/ds2.png"><img class="img-responsive thumbnail" style="max-width: 90px; max-height:90px;"
+                                                    src="./content/images/DASHBOARDG/ds2.png"></a>
+                                            <a href="./content/images/DASHBOARDG/ds3.png"><img class="img-responsive thumbnail" style="max-width: 90px; max-height:90px;"
+                                                    src="./content/images/DASHBOARDG/ds3.png"></a>
+                                            <a href="./content/images/DASHBOARDG/ds4.png"><img class="img-responsive thumbnail" style="max-width: 90px; max-height:90px;"
+                                                    src="./content/images/DASHBOARDG/ds4.png"></a>
+                                            <a href="./content/images/DASHBOARDG/ds5.png"><img class="img-responsive thumbnail" style="max-width: 90px; max-height:90px;"
+                                                    src="./content/images/DASHBOARDG/ds5.png"></a>
+                                            <a href="./content/images/DASHBOARDG/ds6.png"><img class="img-responsive thumbnail" style="max-width: 90px; max-height:90px;"
+                                                    src="./content/images/DASHBOARDG/ds6.png"></a>
+                                            <a href="./content/images/DASHBOARDG/ds7.png"><img class="img-responsive thumbnail" style="max-width: 90px; max-height:90px;"
+                                                    src="./content/images/DASHBOARDG/ds7.png"></a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--Aura Inventario-->
+                        <div class="row">
+                            <div class="col s12 m16">
+                                <div class="card blue-grey darken-1">
+                                    <div class="card-content white-text">
+                                        <span class="card-title activator white-text">Aura Inventario<i class="material-icons right">more_vert</i></span>
+                                        <p>Un sistema interno para el manejo de inventarios hecho en C# Asp.Net y bootstrap.
+                                        </p>
+                                    </div>
+
+                                    <div class="card-action">
+                                        <a class="activator" style="cursor:pointer">Galeria</a>
+                                    </div>
+
+                                    <div class="card-reveal white-text blue-grey darken-1">
+                                        <span class="card-title white-text">Aura Inventario<i class="material-icons right">close</i></span>
+                                        <br />
+                                        <div id="aurai">
+                                            <a href="./content/images/AURAI/aura1.png"><img class="img-responsive thumbnail" style="max-width: 90px; max-height:90px;"
+                                                    src="./content/images/AURAI/aura1.png"></a>
+                                            <a href="./content/images/AURAI/aura2.png"><img class="img-responsive thumbnail" style="max-width: 90px; max-height:90px;"
+                                                    src="./content/images/AURAI/aura2.png"></a>
+                                            <a href="./content/images/AURAI/aura3.png"><img class="img-responsive thumbnail" style="max-width: 90px; max-height:90px;"
+                                                    src="./content/images/AURAI/aura3.png"></a>
+                                            <a href="./content/images/AURAI/aura4.png"><img class="img-responsive thumbnail" style="max-width: 90px; max-height:90px;"
+                                                    src="./content/images/AURAI/aura4.png"></a>
+                                            <a href="./content/images/AURAI/aura5.png"><img class="img-responsive thumbnail" style="max-width: 90px; max-height:90px;"
+                                                    src="./content/images/AURAI/aura5.png"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--SAMU-->
+                        <div class="row">
+                            <div class="col s12 m16">
+                                <div class="card blue-grey darken-1">
+                                    <div class="card-content white-text">
+                                        <span class="card-title activator white-text">SAMU SGPS<i class="material-icons right">more_vert</i></span>
+                                        <p>Sistema de mantenimiento, contabilidad y rastreo básico en un caso imaginario para
+                                            el SAMU de rancagua, hecho en VB.NET y MSSQL.
+                                        </p>
+                                    </div>
+
+                                    <div class="card-action">
+                                        <a class="activator" style="cursor:pointer">Galeria</a>
+                                    </div>
+
+                                    <div class="card-reveal white-text blue-grey darken-1">
+                                        <span class="card-title white-text">SAMU SGPS<i class="material-icons right">close</i></span>
+                                        <br />
+                                        <div id="samu">
+                                            <a href="./content/images/SAMU/samu1.jpg"><img class="img-responsive thumbnail" style="max-width: 90px; max-height:90px;"
+                                                    src="./content/images/SAMU/samu1.jpg"></a>
+                                            <a href="./content/images/SAMU/samu2.jpg"><img class="img-responsive thumbnail" style="max-width: 90px; max-height:90px;"
+                                                    src="./content/images/SAMU/samu2.jpg"></a>
+                                            <a href="./content/images/SAMU/samu3.jpg"><img class="img-responsive thumbnail" style="max-width: 90px; max-height:90px;"
+                                                    src="./content/images/SAMU/samu3.jpg"></a>
+                                            <a href="./content/images/SAMU/samu4.jpg"><img class="img-responsive thumbnail" style="max-width: 90px; max-height:90px;"
+                                                    src="./content/images/SAMU/samu4.jpg"></a>
+                                            <a href="./content/images/SAMU/samu5.jpg"><img class="img-responsive thumbnail" style="max-width: 90px; max-height:90px;"
+                                                    src="./content/images/SAMU/samu5.jpg"></a>
+                                            <a href="./content/images/SAMU/samu6.jpg"><img class="img-responsive thumbnail" style="max-width: 90px; max-height:90px;"
+                                                    src="./content/images/SAMU/samu6.jpg"></a>
+                                            <a href="./content/images/SAMU/samu7.jpg"><img class="img-responsive thumbnail" style="max-width: 90px; max-height:90px;"
+                                                    src="./content/images/SAMU/samu7.jpg"></a>
+                                            <a href="./content/images/SAMU/samu8.jpg"><img class="img-responsive thumbnail" style="max-width: 90px; max-height:90px;"
+                                                    src="./content/images/SAMU/samu8.jpg"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/Content-->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contacto" class="hidden">
+            <div id="content" class="content ">
+                <div class="container-fluid">
+                    <div class="block-header">
+                        <!--Content-->
+                        <div class="row">
+                            <div class="col s12 m16">
+                                <div class="card blue-grey darken-1">
+                                    <div class="card-content white-text">
+                                        <span class="card-title">Contacto</span>
+                                        <p>Cel: (+596) 853 495 52 (Preferente)<br> Cel: (+596) 885 070 08 <br> Correo: ivanguzman.cavieres@gmail.com
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/Content-->
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!--<div class="push"></div>-->
     </main>
     <footer class="page-footer">
         <div class="container">
             <div class="row">
                 <div class="col s12 m8 l6">
-                    <p class="grey-text text-lighten-4">Creado con <a target="_blank" href="http://materializecss.com">Materialize.css</a>.<br> Hosting por Github.<br>Este sitio es compatible con dispositivos móviles.
+                    <p class="grey-text text-lighten-4">Creado con <a target="_blank" href="http://materializecss.com">Materialize.css</a>.<br> Hosting por Github.<br>Este
+                        sitio es compatible con dispositivos móviles.
                     </p>
                 </div>
                 <div class="col s12 m4 l6">
@@ -189,6 +371,7 @@
     <script type="text/javascript" src="./content/js/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="./content/js/materialize.min.js"></script>
     <script type="text/javascript" src="./content/js/site.js"></script>
+    <script type="text/javascript" src="./content/js/lightgallery-all.min.js"></script>
     <script>
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;

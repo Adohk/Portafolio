@@ -35,3 +35,30 @@ $(document).ready(function () {
         selector: 'a'
     });
 });
+
+function selectSection(_section){
+	var sections={
+		inicio : document.getElementById("inicio"),
+		experiencia : document.getElementById("experiencia"),
+		proyectos : document.getElementById("proyectos"),
+        contacto : document.getElementById("contacto")
+	};
+    var buttons={
+        inicio : document.getElementById("inili"),
+		experiencia : document.getElementById("expli"),
+		proyectos : document.getElementById("proli"),
+        contacto : document.getElementById("conli")
+    };
+
+	for(section in sections){
+		if(section===_section){
+			sections[section].classList.add("selected");
+            buttons[section].classList.add("active");
+		}else{
+			sections[section].classList.remove("selected");
+            buttons[section].classList.remove("active");
+		}
+	}
+
+	return false;
+}
