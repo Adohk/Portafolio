@@ -1,4 +1,6 @@
-$('.button-collapse').sideNav();
+$('.button-collapse').sideNav({
+    closeOnClick: true
+});
 
 $(window).on("load", function () {
     setTimeout(function () {
@@ -59,6 +61,10 @@ function selectSection(_section){
             buttons[section].classList.remove("active");
 		}
 	}
+
+    if($body.width() < 992){
+
+    }
 
 	return false;
 }
