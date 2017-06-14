@@ -9,7 +9,7 @@
 
 
 .selected{
-	display: unset;
+	display: block;
 }
 
 .user-img img {
