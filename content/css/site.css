@@ -9,7 +9,7 @@
 
 
 .selected{
-	display: unset;
+	display: block;
 }
 
 .user-img img {
@@ -115,6 +115,10 @@ footer {
 
 body {
     background-color: gainsboro;
+}
+
+.side-nav{
+    height: 100% !important;
 }
 
 .side-nav li.active {
