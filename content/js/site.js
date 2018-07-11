@@ -30,6 +30,10 @@ $(document).ready(function () {
         thumbnail: true,
         selector: 'a'
     });
+    $('#bodegai').lightGallery({
+        thumbnail: true,
+        selector: 'a'
+    });
     $('#dashboardi').lightGallery({
         thumbnail: true,
         selector: 'a'
